@@ -13,6 +13,18 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontSize: {
+        'button': ['10px', '14px']
+      },
+      animation: {
+        'shine-slide': 'shine-slide 2s infinite',
+      },
+      keyframes: {
+        'shine-slide': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(125%)' },
+        },
+      },
     },
   },
   plugins: [],
